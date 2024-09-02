@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #17dcf2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(225, 18, 18, 0.1);
+}
+
+.input-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#array-elements, #array-size {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#visualization {
+    margin-top: 20px;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#code-output, #complexity-output {
+    text-align: left;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#complexity-output p {
+    margin: 5px 0;
+}
+#visualization {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.bar {
+    background-color: #4CAF50; /* Color for the bars */
+    display: inline-block;
+    width: 30px; /* Fixed width for bars */
+    margin-right: 2px; /* Space between bars */
+    vertical-align: bottom;
+    transition: height 0.5s ease; /* Smooth transition for height change */
+    position: relative; /* Position relative for label positioning */
+}
+
+.label {
+    position: absolute;
+    bottom: 100%; /* Position above the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #000; /* Color of the value text */
+}
+
